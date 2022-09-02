@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-input {
+    @apply block p-2.5 w-full text-sm text-gray-900 dark:text-white dark:placeholder:text-gray-400 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-300 focus:border-blue-500 dark:border-gray-500 focus:ring-blue-500;
+  }
+  /* ... */
+}
+
+@layer base {
+  body {
+    @apply dark:text-gray-50 dark:bg-gradient-to-bl dark:from-gray-800 dark:to-gray-900;
+  }
+  blockquote {
+    @apply p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800;
+  }
+
+  body::-webkit-scrollbar {
+    width: 10px; /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply bg-gray-300 dark:bg-gray-800; /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply bg-gray-500 dark:bg-gray-600; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+  }
+  /* ... */
+}
